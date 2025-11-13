@@ -1,0 +1,197 @@
+---
+---
+
+<section class="why-private">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">💡 Prednosti</span>
+      <h2>Zašto baš privatni časovi?</h2>
+      <p class="section-subtitle">Individualan pristup donosi najbolje rezultate</p>
+    </div>
+
+    <div class="why-content">
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-number">01</div>
+          <h3>Učimo tvojim tempom</h3>
+          <p>Ne žurimo, ne zaostajemo. Prilagođavamo se potpuno tvom ritmu učenja i nivou znanja.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">02</div>
+          <h3>Pitaj koliko god hoćeš</h3>
+          <p>Nema glupih pitanja! Možeš da pitaš isto pitanje i deset puta dok ne razumeš potpuno.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">03</div>
+          <h3>Opuštena atmosfera</h3>
+          <p>Bez stresa i pritiska. Učimo u prijatnom okruženju gde možeš da budeš opušten.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">04</div>
+          <h3>Prijatno okruženje</h3>
+          <p>Časovi se održavaju kod mene u stanu u mirnom delu Kaluđerice, idealno za fokusiran rad.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">05</div>
+          <h3>Više vremena za tvoje nedoumice</h3>
+          <p>Fokusiramo se isključivo na ono što tebi pravi problem, bez gubljenja vremena.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">06</div>
+          <h3>Sigurniji ulazak u školu</h3>
+          <p>Sa dobrim razumevanjem gradiva, svaki test i kontrolni će biti mnogo lakši!</p>
+        </div>
+      </div>
+
+      <div class="why-highlight">
+        <div class="highlight-content">
+          <div class="highlight-icon">🎯</div>
+          <div>
+            <h3>Rezultati koji govore sami za sebe</h3>
+            <p>Individualan pristup omogućava brže razumevanje i bolje ocene. Deca postaju sigurnija u svoje znanje i razvijaju ljubav prema učenju!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .why-private {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #62b8a6 0%, #34645a 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .why-private::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(255,255,255,0.05) 19px, rgba(255,255,255,0.05) 20px),
+      repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(255,255,255,0.05) 19px, rgba(255,255,255,0.05) 20px);
+    background-size: 20px 20px;
+  }
+
+  .why-private .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .why-private .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .why-private .section-header h2 {
+    color: #fff;
+  }
+
+  .why-private .section-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .why-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .why-item {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 35px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .why-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .why-number {
+    display: inline-block;
+    background: linear-gradient(135deg, #62b8a6, #34645a);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .why-item h3 {
+    font-size: 1.3rem;
+    color: #354d48;
+    margin-bottom: 12px;
+  }
+
+  .why-item p {
+    color: #666;
+    line-height: 1.7;
+  }
+
+  .why-highlight {
+    background: #ffde59;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .highlight-content {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  .highlight-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+  }
+
+  .highlight-content h3 {
+    font-size: 1.5rem;
+    color: #354d48;
+    margin-bottom: 12px;
+  }
+
+  .highlight-content p {
+    color: #354d48;
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+
+  @media (max-width: 768px) {
+    .why-private {
+      padding: 60px 0;
+    }
+
+    .why-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .highlight-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

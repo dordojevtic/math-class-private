@@ -1,0 +1,295 @@
+---
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="badge">🎁 Besplatan probni čas</span>
+        <h1>Privatni Časovi Matematike</h1>
+        <p class="subtitle">
+          Pomoć učenicima od 1. do 8. razreda u savladavanju matematike kroz individualan pristup i prijatnu atmosferu
+        </p>
+        
+        <div class="benefits">
+          <div class="benefit-item">
+            <span class="icon">✓</span>
+            <span>Priprema za testove i kontrolne</span>
+          </div>
+          <div class="benefit-item">
+            <span class="icon">✓</span>
+            <span>Vežbanje novog gradiva</span>
+          </div>
+          <div class="benefit-item">
+            <span class="icon">✓</span>
+            <span>Fleksibilno zakazivanje</span>
+          </div>
+          <div class="benefit-item">
+            <span class="icon">✓</span>
+            <span>Individualan pristup</span>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="#kontakt" class="btn btn-primary">Zakaži Besplatan Čas</a>
+          <a href="#o-meni" class="btn btn-secondary">Saznaj Više</a>
+        </div>
+
+        <div class="location">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Kaluđerica, Beograd</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="card-header">
+            <span class="card-icon">📐</span>
+            <h3>Master Inženjer Saobraćaja</h3>
+          </div>
+          <div class="card-content">
+            <p>Saobraćajni fakultet, Beograd</p>
+            <div class="stats">
+              <div class="stat">
+                <strong>1-8</strong>
+                <span>razredi</span>
+              </div>
+              <div class="stat">
+                <strong>45min</strong>
+                <span>besplatno</span>
+              </div>
+              <div class="stat">
+                <strong>100%</strong>
+                <span>prilagođeno</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="float-element" style="top: 20px; right: 20px;">💡</div>
+        <div class="float-element" style="bottom: 40px; left: 20px;">📚</div>
+        <div class="float-element" style="top: 50%; right: -10px;">✏️</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-pattern"></div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #62b8a6 0%, #34645a 100%);
+  }
+
+  .bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+    background-image: 
+      repeating-linear-gradient(0deg, transparent, transparent 19px, #fff 19px, #fff 20px),
+      repeating-linear-gradient(90deg, transparent, transparent 19px, #fff 19px, #fff 20px);
+    background-size: 20px 20px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: #ffde59;
+    color: #354d48;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 0.95rem;
+  }
+
+  .benefit-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+  }
+
+  .hero-visual {
+    position: relative;
+  }
+
+  .visual-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffde59;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .card-header h3 {
+    font-size: 1.25rem;
+    color: #354d48;
+  }
+
+  .card-content p {
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .stat {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+  }
+
+  .stat strong {
+    display: block;
+    font-size: 1.5rem;
+    color: #62b8a6;
+    margin-bottom: 5px;
+  }
+
+  .stat span {
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  .float-element {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 3s ease-in-out infinite;
+    opacity: 0.7;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .float-element:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+
+  .float-element:nth-child(3) {
+    animation-delay: 1s;
+  }
+
+  @media (max-width: 968px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+    }
+
+    .benefits {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .visual-card {
+      padding: 25px;
+    }
+
+    .stats {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,122 @@
+---
+---
+
+<section id="o-meni" class="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">📚 O meni</span>
+      <h2>Ko sam ja?</h2>
+      <p class="section-subtitle">Upoznajte svog instruktora matematike</p>
+    </div>
+
+    <div class="about-content">
+      <div class="about-card">
+        <div class="about-icon">👩‍🎓</div>
+        <h3>Obrazovanje</h3>
+        <p>Master Inženjer Saobraćaja sa Saobraćajnog fakulteta u Beogradu. Tokom studija sam razvila duboko razumevanje matematike i njene primene u realnom svetu.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="about-icon">❤️</div>
+        <h3>Strast prema matematici</h3>
+        <p>Matematiku volim još od osnovne škole i želim da tu ljubav prenesem na decu. Verujem da svako može da razume matematiku uz pravi pristup.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="about-icon">🎯</div>
+        <h3>Moj pristup</h3>
+        <p>Strpljiva sam, prijateljski nastrojena i prilagođavam tempo učenja svakom detetu. Fokusiram se na razumevanje, ne samo pamćenje formula.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="about-icon">🌟</div>
+        <h3>Moj cilj</h3>
+        <p>Želim da matematika postane omiljeni predmet svakog deteta! Kroz razumevanje i pozitivno iskustvo, deca će steći sigurnost i bolje ocene.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .section-badge {
+    display: inline-block;
+    background-color: #ffde59;
+    color: #354d48;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: #354d48;
+    margin-bottom: 15px;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .about-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #62b8a6;
+  }
+
+  .about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .about-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .about-card h3 {
+    font-size: 1.5rem;
+    color: #354d48;
+    margin-bottom: 15px;
+  }
+
+  .about-card p {
+    color: #666;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 768px) {
+    .about {
+      padding: 60px 0;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

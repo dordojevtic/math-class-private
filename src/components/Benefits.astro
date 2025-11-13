@@ -1,0 +1,202 @@
+---
+---
+
+<section class="benefits-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">🎁 Ponuda</span>
+      <h2>Šta dobijaš?</h2>
+      <p class="section-subtitle">Iskoristi priliku i vidi rezultate!</p>
+    </div>
+
+    <div class="benefits-wrapper">
+      <div class="benefits-main">
+        <div class="benefit-box primary">
+          <div class="benefit-header">
+            <span class="benefit-emoji">🎁</span>
+            <h3>Prvi čas je besplatan!</h3>
+          </div>
+          <p>Iskoristi probni čas od <strong>45 minuta</strong> i vidi da li ti odgovara moje prenošenje znanja.</p>
+          <p>Bez obaveze, bez pritiska - samo da se upoznamo i vidimo kako možemo zajedno da poboljšamo tvoje znanje matematike!</p>
+        </div>
+
+        <div class="benefit-box secondary">
+          <div class="benefit-header">
+            <span class="benefit-emoji">🔖</span>
+            <h3>Preporuči me i dobij popust!</h3>
+          </div>
+          <p>Ako ti se svidi način rada, možeš me preporučiti poznanicima i tako ostvariti <strong>dodatni popust</strong> na sledeće časove.</p>
+          <p>Win-win situacija - ti dobijas popust, a tvoji prijatelji kvalitetnu nastavu!</p>
+        </div>
+      </div>
+
+      <div class="benefits-list">
+        <h3>Šta još dobijaš?</h3>
+        <ul>
+          <li>
+            <span class="check">✓</span>
+            <span>Prilagođene materijale za učenje</span>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <span>Dodatne vežbe i zadatke</span>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <span>Praćenje napretka</span>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <span>Savete za učenje kod kuće</span>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <span>Podršku putem poruka između časova</span>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <span>Fleksibilno zakazivanje</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .benefits-section {
+    padding: 100px 0;
+    background-color: #fff;
+  }
+
+  .benefits-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .benefits-main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .benefit-box {
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .benefit-box.primary {
+    background: linear-gradient(135deg, #62b8a6 0%, #34645a 100%);
+    color: #fff;
+    border: 3px solid #ffde59;
+  }
+
+  .benefit-box.secondary {
+    background: #ffde59;
+    color: #354d48;
+  }
+
+  .benefit-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .benefit-emoji {
+    font-size: 2.5rem;
+  }
+
+  .benefit-box h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .benefit-box.primary h3 {
+    color: #fff;
+  }
+
+  .benefit-box p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+
+  .benefit-box p:last-child {
+    margin-bottom: 0;
+  }
+
+  .benefit-box.primary p {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .benefit-box strong {
+    font-weight: 700;
+  }
+
+  .benefit-box.primary strong {
+    color: #ffde59;
+  }
+
+  .benefits-list {
+    background: #f8f9fa;
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid #e9ecef;
+  }
+
+  .benefits-list h3 {
+    font-size: 1.3rem;
+    color: #354d48;
+    margin-bottom: 25px;
+  }
+
+  .benefits-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .benefits-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #62b8a6;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 968px) {
+    .benefits-section {
+      padding: 60px 0;
+    }
+
+    .benefits-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .benefit-box {
+      padding: 30px;
+    }
+  }
+</style>
