@@ -1,4 +1,4 @@
-# Privatni Časovi Matematike 📚
+# Private Mathematics Tutoring 📚
 
 A modern, responsive website for private mathematics tutoring services in Kaluđerica, Belgrade, Serbia.
 
