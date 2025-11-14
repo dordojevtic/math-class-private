@@ -1,4 +1,5 @@
 ---
+const clickToSeeNumber = "Klikni da vidiš broj";
 ---
 
 <section id="kontakt" class="contact">
@@ -6,62 +7,117 @@
     <div class="section-header">
       <span class="section-badge">📩 Kontakt</span>
       <h2>Spremna sam - jesi li ti?</h2>
-      <p class="section-subtitle">Javi mi se i zakažimo tvoj besplatan probni čas!</p>
+      <p class="section-subtitle">
+        Javi mi se i zakažimo tvoj besplatan probni čas!
+      </p>
     </div>
 
     <div class="contact-content">
       <div class="contact-info">
         <div class="contact-highlight">
           <h3>🎁 Iskoristi besplatan probni čas!</h3>
-          <p>Prvi čas od 45 minuta je potpuno besplatan. Bez obaveze, bez pritiska - samo da se upoznamo i vidimo kako možemo zajedno da poboljšamo tvoje znanje matematike!</p>
+          <p>
+            Prvi čas od 45 minuta je potpuno besplatan. Bez obaveze, bez
+            pritiska - samo da se upoznamo i vidimo kako možemo zajedno da
+            poboljšamo tvoje znanje matematike!
+          </p>
         </div>
 
         <div class="contact-methods">
           <div class="contact-method">
             <div class="method-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
               </svg>
             </div>
             <div class="method-content">
               <h4>Telefon</h4>
-              <a href="tel:+381644850592" class="contact-link">+381 64 485 05 92</a>
+              <div class="phone-container">
+                <div id="phone-content" class="blurred">
+                  <a href="tel:+381644850592" class="contact-link"
+                    >+381 64 185 05 92</a
+                  >
+                </div>
+                <button
+                  class="reveal-btn"
+                  onclick="document.getElementById('phone-content').classList.remove('blurred'); this.remove();"
+                >
+                  {clickToSeeNumber}
+                </button>
+              </div>
               <p class="method-note">Pozovi me ili pošalji SMS</p>
             </div>
           </div>
 
           <div class="contact-method">
             <div class="method-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
               </svg>
             </div>
             <div class="method-content">
               <h4>Email</h4>
-              <a href="mailto:primer@email.com" class="contact-link">primer@email.com</a>
+              <a href="mailto:primer@email.com" class="contact-link"
+                >primer@email.com</a
+              >
               <p class="method-note">Pošalji mi poruku putem email-a</p>
             </div>
           </div>
 
           <div class="contact-method">
             <div class="method-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
             </div>
             <div class="method-content">
               <h4>Instagram</h4>
-              <a href="https://instagram.com/matematicari_kdj" target="_blank" class="contact-link">@matimaticari_kdj</a>
+              <a
+                href="https://instagram.com/matematicari_kdj"
+                target="_blank"
+                class="contact-link">@matimaticari_kdj</a
+              >
               <p class="method-note">Pošalji mi DM na Instagramu</p>
             </div>
           </div>
 
           <div class="contact-method">
             <div class="method-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
@@ -76,22 +132,37 @@
 
         <div class="contact-cta">
           <p><strong>Roditelji, ne oklevajte!</strong></p>
-          <p>Javite mi se danas i pomozimo zajedno vašem detetu da zavoli matematiku! 💚</p>
+          <p>
+            Javite mi se danas i pomozimo zajedno vašem detetu da zavoli
+            matematiku! 💚
+          </p>
         </div>
       </div>
 
       <div class="contact-form-wrapper">
         <form class="contact-form" action="#" method="POST">
           <h3>Ili mi pošalji poruku ovde</h3>
-          
+
           <div class="form-group">
             <label for="parent-name">Ime roditelja *</label>
-            <input type="text" id="parent-name" name="parent-name" required placeholder="Vaše ime">
+            <input
+              type="text"
+              id="parent-name"
+              name="parent-name"
+              required
+              placeholder="Vaše ime"
+            />
           </div>
 
           <div class="form-group">
             <label for="student-name">Ime učenika *</label>
-            <input type="text" id="student-name" name="student-name" required placeholder="Ime deteta">
+            <input
+              type="text"
+              id="student-name"
+              name="student-name"
+              required
+              placeholder="Ime deteta"
+            />
           </div>
 
           <div class="form-group">
@@ -111,22 +182,45 @@
 
           <div class="form-group">
             <label for="phone">Telefon *</label>
-            <input type="tel" id="phone" name="phone" required placeholder="+381 64 485 05 92">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="+381 64 485 05 92"
+            />
           </div>
 
           <div class="form-group">
             <label for="email">milenasimic94@gmail.com</label>
-            <input type="email" id="email" name="email" placeholder="milenasimic94@gmail.com">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="milenasimic94@gmail.com"
+            />
           </div>
 
           <div class="form-group">
             <label for="message">Poruka</label>
-            <textarea id="message" name="message" rows="4" placeholder="Recite mi nešto više o potrebama vašeg deteta..."></textarea>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Recite mi nešto više o potrebama vašeg deteta..."
+            ></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary btn-submit">
             Pošalji poruku
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
               <line x1="22" y1="2" x2="11" y2="13"></line>
               <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
             </svg>
@@ -146,7 +240,7 @@
       </div>
       <div class="footer-section">
         <h4>Kontakt</h4>
-        <p>📞 +381 64 485 05 92</p>
+        <p>📞 +381 64 185 05 92</p>
         <p>📧 milenasimic94@gmail.com</p>
         <p>📍 Kaluđerica, Beograd</p>
       </div>
@@ -164,6 +258,45 @@
 </footer>
 
 <style>
+  .phone-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .section-badge {
+    display: inline-block;
+    background-color: #ffde59;
+    color: #354d48;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .blurred {
+    filter: blur(3px);
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .reveal-btn {
+    color: rgba(0, 0, 0, 0.692);
+    padding-left: 1rem;
+    background: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+
   .contact {
     padding: 100px 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -210,7 +343,9 @@
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
   }
 
   .contact-method:hover {
@@ -245,7 +380,6 @@
     font-weight: 600;
     font-size: 1.05rem;
     display: block;
-    margin-bottom: 5px;
     transition: color 0.3s ease;
   }
 
@@ -309,7 +443,7 @@
     border: 2px solid #e9ecef;
     border-radius: 8px;
     font-size: 1rem;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     transition: border-color 0.3s ease;
   }
 
